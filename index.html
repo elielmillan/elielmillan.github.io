@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora para Vendedores</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/handsontable@12.1.0/dist/handsontable.full.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/handsontable@12.1.0/dist/handsontable.full.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Cotizador</a></li>
+            </ul>
+    </nav>
+
+    <h1>Calculadora de Precios</h1>
+    <p>Ingresa los datos para calcular el costo final.</p>
+    <div id="hoja-calculo"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+nav: Esta etiqueta define la barra de navegación.
+
+ul: Define una lista no ordenada (los elementos del menú).
+
+li: Representa un elemento de la lista (un ítem del menú).
+
+a: Es el enlace que el usuario puede pulsar. El atributo href="index.html" le dice al navegador que al pulsar en el enlace, debe ir a la página index.html.
+
+Agrega estilos CSS para que el menú se vea bien
+Ahora, para que el menú no se vea como una simple lista, puedes agregarle algunos estilos. Abre tu archivo styles.css y añade el siguiente código al final.
+
+CSS
+
+/* Estilos para el menú de navegación */
+.menu {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Cambia el color del enlace cuando el usuario pasa el mouse por encima */
+.menu li a:hover {
+    background-color: #555;
+}
